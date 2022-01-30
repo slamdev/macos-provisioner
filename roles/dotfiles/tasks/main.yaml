@@ -4,6 +4,15 @@
     dest: "{{ ansible_env.HOME }}/.macos-provisioner"
     accept_hostkey: yes
 
+- name: Symlink sudoers
+  file:
+    src: "{{ ansible_env.HOME }}/.macos-provisioner/dotfiles/sudoers"
+    dest: /private/etc/sudoers.d/custom
+    state: link
+    group: 0
+    owner: 0
+  become: yes
+
 - name: Symlink files
   file:
     src: "{{ ansible_env.HOME }}/.macos-provisioner/dotfiles/{{ item.src }}"

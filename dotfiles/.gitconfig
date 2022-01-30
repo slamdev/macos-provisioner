@@ -1,0 +1,24 @@
+[user]
+  name = Valentin Fedoskin
+  email = valentin.fedoskin@gmail.com
+[core]
+  editor = vi
+  excludesfile = ~/.gitignore
+  autocrlf = input
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[init]
+  defaultBranch = main
+[web]
+  browser = google-chrome
+[credential]
+  helper = osxkeychain
+[push]
+  default = simple
+[difftool]
+  prompt = false
+[pull]
+  rebase = true

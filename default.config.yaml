@@ -101,5 +101,7 @@ ssh_public_key: false
 secret_profile: false
 
 dotfiles:
-  - src: sudoers
-    dest: /private/etc/sudoers.d/custom
+  - src: .gitconfig
+    dest: "{{ ansible_env.HOME }}/.gitconfig"
+  - src: .gitignore
+    dest: "{{ ansible_env.HOME }}/.gitignore"
