@@ -3,3 +3,10 @@
     repo: git@github.com:slamdev/macos-provisioner.git
     dest: "{{ ansible_env.HOME }}/.macos-provisioner"
     accept_hostkey: yes
+
+- name: Symlink files
+  file:
+    src: "{{ ansible_env.HOME }}/.macos-provisioner/dotfiles/{{ item.src }}"
+    dest: "{{ item.dest }}"
+    state: link
+  with_items: "{{ dotfiles }}"

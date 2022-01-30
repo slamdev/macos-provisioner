@@ -97,3 +97,9 @@ background_picture: /System/Library/Desktop Pictures/Monterey Graphic.heic
 
 ssh_private_key: false
 ssh_public_key: false
+
+secret_profile: false
+
+dotfiles:
+  - src: sudoers
+    dest: /private/etc/sudoers.d/custom
