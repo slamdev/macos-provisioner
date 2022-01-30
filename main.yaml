@@ -1,0 +1,22 @@
+- hosts: all
+  vars_files:
+    - default.config.yaml
+  vars:
+    brew_bin: "{{ (ansible_machine == 'arm64') | ternary('/opt/homebrew', '/usr/local') }}/bin"
+  pre_tasks:
+    - name: Include playbook configuration.
+      include_vars: "{{ item }}"
+      with_fileglob:
+        - "{{ playbook_dir }}/config.yaml"
+  roles:
+    - role: elliotweiser.osx-command-line-tools
+    - role: rosetta
+    - role: geerlingguy.mac.homebrew
+    - role: mas
+    - role: gantsign.oh-my-zsh
+      users:
+        - username: "{{ ansible_user_id }}"
+    - role: osx-defaults
+    - role: krew
+    - role: mysides
+    - role: dockutil

@@ -1,0 +1,15 @@
+- name: Check if Dock is cleared
+  stat: "path={{ ansible_env.HOME }}/.ansible/dockutil-cleared"
+  register: dockutil_cleared_file
+  check_mode: false
+
+- name: Clear all Dock items
+  command: "{{ brew_bin }}/dockutil --remove all"
+  when: not dockutil_cleared_file.stat.exists
+
+- name: Store cleared indicator
+  file:
+    path: "{{ ansible_env.HOME }}/.ansible/dockutil-cleared"
+    state: touch
+    access_time: preserve
+    modification_time: preserve

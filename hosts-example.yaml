@@ -1,0 +1,10 @@
+all:
+  hosts:
+  # you run ansible either from the same machine you are provisioning (in this case ansible binaries should be present already)
+  # localhost:
+  #   ansible_connection: local
+  # or you can connect to the remote machine via ssh (Remote Login should be enabled in System Preferences -> Sharing)
+  # mbp.local:
+  #   ansible_user: user
+  #   ansible_ssh_pass: password
+  #   ansible_become_password: password

@@ -1,0 +1,17 @@
+- name: List current items
+  command: /usr/local/bin/mysides list
+  register: mysides_list
+  check_mode: false
+  changed_when: false
+
+- name: Ensure paths are created
+  file:
+    path: "{{ ansible_env.HOME }}/{{ item.path }}"
+    state: directory
+  with_items: "{{ favourites }}"
+  when: (item.name | string) not in mysides_list.stdout
+
+- name: Ensure configured items are installed
+  command: '/usr/local/bin/mysides add "{{ item.name }}" "file://{{ ansible_env.HOME }}/{{ item.path }}"'
+  with_items: "{{ favourites }}"
+  when: (item.name | string) not in mysides_list.stdout

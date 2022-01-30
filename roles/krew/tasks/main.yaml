@@ -1,0 +1,25 @@
+- name: Check if krew is initialized
+  stat: "path={{ ansible_env.HOME }}/.krew/index/default/README.md"
+  register: krew_file
+  check_mode: false
+
+- name: Initialize krew
+  command: "{{ brew_bin }}/kubectl-krew update"
+  environment:
+    PATH: "{{ ansible_env.HOME }}/.krew/bin:{{ ansible_env.PATH }}"
+  when: not krew_file.stat.exists
+
+- name: List installed krew plugins
+  command: "{{ brew_bin }}/kubectl-krew list"
+  register: krew_list
+  check_mode: false
+  changed_when: false
+  environment:
+    PATH: "{{ ansible_env.HOME }}/.krew/bin:{{ ansible_env.PATH }}"
+
+- name: Ensure configured krew plugins are installed
+  command: '{{ brew_bin }}/kubectl-krew install "{{ item }}"'
+  with_items: "{{ krew_plugins }}"
+  environment:
+    PATH: "{{ ansible_env.HOME }}/.krew/bin:{{ ansible_env.PATH }}"
+  when: (item | string) not in krew_list.stdout

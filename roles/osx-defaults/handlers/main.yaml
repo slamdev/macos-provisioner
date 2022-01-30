@@ -1,0 +1,4 @@
+- name: Refresh Dock
+  command: killall Dock
+- name: Refresh Finder
+  command: killall Finder

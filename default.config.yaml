@@ -1,0 +1,94 @@
+homebrew_installed_packages:
+  - ansible
+  - autoconf
+  - awscli
+  - bash-completion
+  - bazelisk
+  - colordiff
+  - curl
+  - dockutil
+  - git
+  - go
+  - goreleaser
+  - gzip
+  - helm
+  - helmfile
+  - jenv
+  - jq
+  - kind
+  - krew
+  - kubernetes-cli
+  - kustomize
+  - mas
+  - minio-mc
+  - node@16
+  - openssl
+  - operator-sdk
+  - packer
+  - pkg-config
+  - postgresql
+  - s3cmd
+  - skaffold
+  - stern
+  - telnet
+  - terraform
+  - terragrunt
+  - tree
+  - watch
+  - wget
+  - yq
+  - zsh-history-substring-search
+
+homebrew_cask_apps:
+  - adobe-acrobat-reader
+  - chrome-remote-desktop-host
+  - docker
+  - google-chrome
+  - google-cloud-sdk
+  - hubstaff
+  - iterm2
+  - jetbrains-toolbox
+  - mucommander
+  - mysides
+  - plex
+  - postman
+  - qbittorrent
+  - shifty
+  - skype
+  - slack
+  - sublime-text
+  - telegram
+  - temurin
+  - temurin11
+  - vlc
+  - whatsapp
+  - zoom
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-versions
+
+mas_installed_apps:
+  - id: 1475387142
+    name: Tailscale (1.20.2)
+  - id: 1352778147
+    name: Bitwarden (1.30.0)
+
+mas_email: false
+mas_password: false
+mas_signin_dialog: false
+
+oh_my_zsh_plugins:
+  - git
+  - kubectl
+  - docker
+
+krew_plugins:
+  - ctx
+
+favourites:
+  - name: Home
+    path: ""
+  - name: Workspace
+    path: workspace
