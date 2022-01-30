@@ -22,3 +22,4 @@
     - role: dockutil
     - role: ssh-keys
     - role: dotfiles
+    - role: jenv

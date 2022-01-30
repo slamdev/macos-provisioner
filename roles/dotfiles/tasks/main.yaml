@@ -37,3 +37,10 @@
     url: https://iterm2.com/shell_integration/zsh
     dest: "{{ ansible_env.HOME }}/.iterm2_shell_integration.zsh"
     mode: 0755
+
+- name: Set iterm profile
+  community.general.osx_defaults:
+    domain: com.googlecode.iterm2
+    key: Default Bookmark Guid
+    type: string
+    value: BE1798E7-7D9B-43FB-9D30-843AADE7FE45
