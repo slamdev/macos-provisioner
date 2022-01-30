@@ -111,3 +111,5 @@ dotfiles:
     dest: "{{ ansible_env.HOME }}/.ssh/config"
   - src: profile.zsh
     dest: "{{ ansible_env.HOME }}/.oh-my-zsh/custom/profile.zsh"
+  - src: iterm-profile.json
+    dest: "{{ ansible_env.HOME }}/Library/Application Support/iTerm2/DynamicProfiles/iterm-profile.json"
