@@ -92,3 +92,8 @@ favourites:
     path: ""
   - name: Workspace
     path: workspace
+
+background_picture: /System/Library/Desktop Pictures/Monterey Graphic.heic
+
+ssh_private_key: false
+ssh_public_key: false

@@ -1,6 +1,6 @@
-- name: Set Monterey background
+- name: Set background picture
   ansible.builtin.command:
-    cmd: osascript -e 'tell application "System Events" to tell every desktop to set picture to "/System/Library/Desktop Pictures/Monterey Graphic.heic" as POSIX file'
+    cmd: osascript -e 'tell application "System Events" to tell every desktop to set picture to "{{ background_picture }}" as POSIX file'
 
 - name: Disable sleep mode
   ansible.builtin.command:

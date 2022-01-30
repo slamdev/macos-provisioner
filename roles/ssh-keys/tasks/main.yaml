@@ -1,0 +1,16 @@
+- name: Ensure .ssh directory is created
+  file:
+    path: "{{ ansible_env.HOME }}/.ssh"
+    state: directory
+
+- name: Create private key
+  copy:
+    dest: "{{ ansible_env.HOME }}/.ssh/id_rsa"
+    mode: 0600
+    content: "{{ ssh_private_key }}"
+
+- name: Create public key
+  copy:
+    dest: "{{ ansible_env.HOME }}/.ssh/id_rsa.pub"
+    mode: 0644
+    content: "{{ ssh_public_key }}"

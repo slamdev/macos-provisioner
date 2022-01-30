@@ -1,0 +1,5 @@
+- name: Clone macos-provisioner repo
+  ansible.builtin.git:
+    repo: git@github.com:slamdev/macos-provisioner.git
+    dest: "{{ ansible_env.HOME }}/.macos-provisioner"
+    accept_hostkey: yes
