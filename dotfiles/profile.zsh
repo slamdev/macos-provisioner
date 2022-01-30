@@ -44,3 +44,5 @@ fi;
 # disable zsh bundled function mtools command mcd
 # which causes a conflict.
 compdef -d mcd
+
+source ~/.iterm2_shell_integration.zsh

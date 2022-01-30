@@ -1,0 +1,10 @@
+- name: Find installaed JVMs
+  find:
+    paths: /Library/Java/JavaVirtualMachines
+    file_type: directory
+    recurse: no
+  register: jvms
+
+- name: Add JVM
+  command: "{{ brew_bin }}/jenv add {{ item.path }}/Contents/Home/"
+  with_items: "{{ jvms.files }}"
