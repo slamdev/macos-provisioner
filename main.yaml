@@ -20,3 +20,5 @@
     - role: krew
     - role: mysides
     - role: dockutil
+    - role: ssh-keys
+    - role: dotfiles

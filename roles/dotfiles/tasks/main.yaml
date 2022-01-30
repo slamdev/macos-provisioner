@@ -19,3 +19,9 @@
     dest: "{{ item.dest }}"
     state: link
   with_items: "{{ dotfiles }}"
+
+- name: Load secret data
+  copy:
+    dest: "{{ ansible_env.HOME }}/.oh-my-zsh/custom/secret-profile.zsh"
+    mode: 0600
+    content: "{{ secret_profile }}"

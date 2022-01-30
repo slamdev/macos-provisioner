@@ -109,5 +109,5 @@ dotfiles:
     dest: "{{ ansible_env.HOME }}/.vimrc"
   - src: ssh-config
     dest: "{{ ansible_env.HOME }}/.ssh/config"
-  - src: .profile
+  - src: profile.zsh
     dest: "{{ ansible_env.HOME }}/.oh-my-zsh/custom/profile.zsh"
