@@ -2,3 +2,5 @@
   command: killall Dock
 - name: Refresh Finder
   command: killall Finder
+- name: Refresh SystemUIServer
+  command: killall SystemUIServer
