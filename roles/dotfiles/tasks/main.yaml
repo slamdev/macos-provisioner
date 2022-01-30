@@ -13,6 +13,12 @@
     owner: 0
   become: yes
 
+- name: Ensure directory is created
+  file:
+    path: "{{ item.dest | dirname }}"
+    state: directory
+  with_items: "{{ dotfiles }}"
+
 - name: Symlink files
   file:
     src: "{{ ansible_env.HOME }}/.macos-provisioner/dotfiles/{{ item.src }}"
