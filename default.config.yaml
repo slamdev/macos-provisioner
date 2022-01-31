@@ -42,6 +42,7 @@ homebrew_installed_packages:
 
 homebrew_cask_apps:
   - adobe-acrobat-reader
+  - authy
   - chrome-remote-desktop-host
   - docker
   - google-chrome
@@ -64,6 +65,7 @@ homebrew_cask_apps:
   - vlc
   - whatsapp
   - zoom
+  - homebrew/cask-drivers/yubico-yubikey-manager
 
 homebrew_taps:
   - homebrew/core
@@ -121,5 +123,9 @@ ghorg:
   - name: slamdev
     scm: github
     clone-type: user
-    path: "{{ ansible_env.HOME }}/workspace"
+    path: "{{ ansible_env.HOME }}"
+    outputDir: slamdev
     base-url: https://api.github.com/
+
+jenv_plugins:
+  - export

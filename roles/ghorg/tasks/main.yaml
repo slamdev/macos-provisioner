@@ -1,7 +1,7 @@
 - name: Clone repos
   shell: |
     source {{ ansible_env.HOME }}/.oh-my-zsh/custom/secret-profile.zsh
-    {{ brew_bin }}/ghorg clone --scm={{ item.scm }} --clone-type={{ item.cloneType }} --path={{ item.path }} --base-url={{ item.baseUrl }} {{ item.name }}
+    {{ brew_bin }}/ghorg clone --scm={{ item.scm }} --clone-type={{ item.cloneType }} --path={{ item.path }} --base-url={{ item.baseUrl }} --output-dir={{ item.outputDir }} {{ item.name }}
   with_items: "{{ ghorg }}"
   register: result
 

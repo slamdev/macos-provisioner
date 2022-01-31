@@ -8,3 +8,10 @@
 - name: Add JVM
   command: "{{ brew_bin }}/jenv add {{ item.path }}/Contents/Home/"
   with_items: "{{ jvms.files }}"
+
+- name: Set global JVM
+  command: "{{ brew_bin }}/jenv global 17"
+
+- name: Enable jenv plugins
+  command: "{{ brew_bin }}/jenv sh-enable-plugin {{ item }}"
+  with_items: "{{ jenv_plugins }}"
