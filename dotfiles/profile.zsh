@@ -1,13 +1,8 @@
 paths=(
-  "/opt/homebrew/bin"
-  "/usr/local/bin"
-  "/usr/local/sbin"
-  "usr/local/opt/curl/bin"
+  "/opt/homebrew/opt/node@16/bin"
   "/usr/local/opt/node@16/bin"
-  "$HOME/bin"
   "$HOME/go/bin"
   "$HOME/.krew/bin"
-  "/usr/local/git/bin"
   "$HOME/.jenv/bin"
 )
 export PATH="$(IFS=: ; echo "${paths[*]}"):$PATH"
