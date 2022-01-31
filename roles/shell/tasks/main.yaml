@@ -1,0 +1,25 @@
+- name: Configure global paths
+  copy:
+    dest: /etc/paths
+    mode: 0644
+    content: |
+      /opt/homebrew/opt/curl/bin
+      /usr/local/opt/curl/bin
+      /opt/homebrew/bin
+      /usr/local/bin
+      /usr/local/sbin
+      /usr/bin
+      /bin
+      /usr/sbin
+      /sbin
+  become: true
+
+- name: Ensure homebrew zsh is in allowed shells
+  lineinfile:
+    path: /etc/shells
+    line: "{{ brew_bin }}/zsh"
+  become: true
+
+- name: Set ZSH as the default shell
+  shell: "chsh -s {{ brew_bin }}/zsh {{ lookup('env', 'USER') }}"
+  become: true

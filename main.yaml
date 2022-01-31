@@ -12,6 +12,7 @@
     - role: elliotweiser.osx-command-line-tools
     - role: rosetta
     - role: geerlingguy.mac.homebrew
+    - role: shell
     - role: mas
     - role: gantsign.oh-my-zsh
       users:
