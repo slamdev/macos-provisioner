@@ -9,6 +9,7 @@ homebrew_installed_packages:
   - dockutil
   - gabrie30/utils/ghorg
   - git
+  - graphviz
   - go
   - goreleaser
   - gzip
