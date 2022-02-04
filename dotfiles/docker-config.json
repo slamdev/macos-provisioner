@@ -1,0 +1,14 @@
+{
+  "credsStore": "desktop",
+  "credHelpers": {
+    "asia.gcr.io": "gcloud",
+    "eu.gcr.io": "gcloud",
+    "gcr.io": "gcloud",
+    "marketplace.gcr.io": "gcloud",
+    "staging-k8s.gcr.io": "gcloud",
+    "us.gcr.io": "gcloud",
+    "302108299776.dkr.ecr.eu-west-1.amazonaws.com": "ecr-login"
+  },
+  "experimental": "disabled",
+  "stackOrchestrator": "kubernetes"
+}

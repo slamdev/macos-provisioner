@@ -2,13 +2,18 @@ homebrew_installed_packages:
   - ansible
   - autoconf
   - awscli
+  - aws-iam-authenticator
   - bash-completion
   - bazelisk
   - colordiff
+  - coreutils
   - curl
   - dockutil
+  - docker-credential-helper-ecr
   - gabrie30/utils/ghorg
   - git
+  - git-lfs
+  - gnu-getopt
   - graphviz
   - go
   - goreleaser
@@ -24,6 +29,7 @@ homebrew_installed_packages:
   - mas
   - minio-mc
   - node@16
+  - norwoodj/tap/helm-docs
   - openssl
   - operator-sdk
   - packer
@@ -120,6 +126,8 @@ dotfiles:
     dest: "{{ ansible_env.HOME }}/Library/Application Support/iTerm2/DynamicProfiles/iterm-profile.json"
   - src: ghorg-conf.yaml
     dest: "{{ ansible_env.HOME }}/.config/ghorg/conf.yaml"
+  - src: docker-config.json
+    dest: "{{ ansible_env.HOME }}/.docker/config.json"
 
 ghorg:
   - name: slamdev

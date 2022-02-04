@@ -3,8 +3,6 @@
     dest: /etc/paths
     mode: 0644
     content: |
-      /opt/homebrew/opt/curl/bin
-      /usr/local/opt/curl/bin
       /opt/homebrew/bin
       /usr/local/bin
       /usr/local/sbin

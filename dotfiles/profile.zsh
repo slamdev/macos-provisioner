@@ -1,6 +1,16 @@
+arch_name="$(uname -m)"
+if [ "${arch_name}" = "x86_64" ]; then
+    brew_path="/usr/local"
+elif [ "${arch_name}" = "arm64" ]; then
+    brew_path="/opt/homebrew"
+else
+    echo "Unknown architecture: ${arch_name}"
+fi
+
 paths=(
-  "/opt/homebrew/opt/node@16/bin"
-  "/usr/local/opt/node@16/bin"
+  "${brew_path}/opt/node@16/bin"
+  "${brew_path}/opt/curl/bin"
+  "${brew_path}/opt/gnu-getopt/bin"
   "$HOME/go/bin"
   "$HOME/.krew/bin"
   "$HOME/.jenv/bin"
@@ -14,6 +24,7 @@ export CLICOLOR_FORCE=1
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export GOPATH="$HOME/go"
+export GOROOT="${brew_path}/opt/go"
 export TF_PLUGIN_CACHE_DIR="${HOME}/.terraform-plugin-cache"
 
 export VISUAL=vim
@@ -28,7 +39,7 @@ ulimit -S -n 2048
 eval "$(jenv init -)"
 
 # load our own completion functions
-fpath=(~/.zsh/completion /usr/local/share/zsh/site-functions /opt/homebrew/share/zsh/site-functions $fpath)
+fpath=(~/.zsh/completion "${brew_path}/share/zsh/site-functions" $fpath)
 # completion; use cache if updated within 24h
 autoload -Uz compinit
 if [[ -n $HOME/.zcompdump(#qN.mh+24) ]]; then
