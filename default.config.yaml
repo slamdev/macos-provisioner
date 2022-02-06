@@ -5,6 +5,7 @@ homebrew_installed_packages:
   - aws-iam-authenticator
   - bash-completion
   - bazelisk
+  - buildifier
   - colordiff
   - coreutils
   - curl
