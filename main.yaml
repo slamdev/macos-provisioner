@@ -14,10 +14,10 @@
     - role: geerlingguy.mac.homebrew
     - role: shell
     - role: mas
+    - role: osx-defaults
     - role: gantsign.oh-my-zsh
       users:
         - username: "{{ ansible_user_id }}"
-    - role: osx-defaults
     - role: krew
     - role: mysides
     - role: dockutil

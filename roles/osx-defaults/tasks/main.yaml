@@ -218,3 +218,8 @@
     key: show-thumbnail
     type: bool
     value: false
+
+- name: Accept XCode license
+  ansible.builtin.command:
+    cmd: xcodebuild -license accept
+  become: true
