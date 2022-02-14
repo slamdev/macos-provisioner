@@ -46,6 +46,7 @@ homebrew_installed_packages:
   - watch
   - wget
   - yq
+  - zsh
   - zsh-history-substring-search
 
 homebrew_cask_apps:
