@@ -223,3 +223,61 @@
   ansible.builtin.command:
     cmd: xcodebuild -license accept
   become: true
+
+- name: Disable reopen on restart
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: ApplePersistence
+    type: bool
+    value: false
+
+- name: Enable subpixel font rendering on non-Apple LCDs
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: AppleFontSmoothing
+    type: int
+    value: 2
+
+- name: Disable 'smart' quotes
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticQuoteSubstitutionEnabled
+    type: bool
+    value: false
+
+- name: Disable 'smart' dashes
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticDashSubstitutionEnabled
+    type: bool
+    value: false
+
+- name: Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window
+  community.general.osx_defaults:
+    domain: com.apple.loginwindow
+    key: AdminHostInfo
+    type: string
+    value: HostName
+
+- name: Allow text selection in QuickLook
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: QLEnableTextSelection
+    type: bool
+    value: true
+  notify:
+    - Refresh Finder
+
+- name: Default to local files instead of iCloud
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSDocumentSaveNewDocumentsToCloud
+    type: bool
+    value: false
+
+- name: Should remove downloaded from the internet warnings
+  community.general.osx_defaults:
+    domain: com.apple.LaunchServices
+    key: LSQuarantine
+    type: bool
+    value: false
