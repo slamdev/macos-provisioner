@@ -37,6 +37,7 @@ homebrew_installed_packages:
   - packer
   - pkg-config
   - postgresql
+  - saml2aws
   - s3cmd
   - skaffold
   - stern
