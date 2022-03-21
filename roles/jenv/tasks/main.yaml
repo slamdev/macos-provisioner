@@ -5,12 +5,22 @@
     recurse: no
   register: jvms
 
+- name: Create versions directory
+  file:
+    path: "{{ ansible_env.HOME }}/.jenv/versions"
+    state: directory
+
 - name: Add JVM
   command: "{{ brew_bin }}/jenv add {{ item.path }}/Contents/Home/"
   with_items: "{{ jvms.files }}"
 
 - name: Set global JVM
   command: "{{ brew_bin }}/jenv global 17"
+
+- name: Create plugins directory
+  file:
+    path: "{{ ansible_env.HOME }}/.jenv/plugins"
+    state: directory
 
 - name: Enable jenv plugins
   command: "{{ brew_bin }}/jenv sh-enable-plugin {{ item }}"
