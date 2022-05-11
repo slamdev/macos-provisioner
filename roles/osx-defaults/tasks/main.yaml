@@ -1,7 +1,3 @@
-- name: Set background picture
-  ansible.builtin.command:
-    cmd: osascript -e 'tell application "System Events" to tell every desktop to set picture to "{{ background_picture }}" as POSIX file'
-
 - name: Disable sleep mode
   ansible.builtin.command:
     cmd: pmset -a sleep 0 hibernatemode 0 disablesleep 1

@@ -9,8 +9,8 @@ homebrew_installed_packages:
   - colordiff
   - coreutils
   - curl
-  - dockutil
   - docker-credential-helper-ecr
+  - esolitos/ipa/sshpass
   - gabrie30/utils/ghorg
   - git
   - git-lfs
@@ -75,6 +75,7 @@ homebrew_cask_apps:
   - telegram
   - temurin
   - temurin11
+  - temurin17
   - vlc
   - whatsapp
   - zoom
@@ -110,8 +111,6 @@ favourites:
     path: ""
   - name: Workspace
     path: workspace
-
-background_picture: /System/Library/Desktop Pictures/Monterey Graphic.heic
 
 ssh_private_key: false
 ssh_public_key: false
