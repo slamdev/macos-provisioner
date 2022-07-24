@@ -58,6 +58,7 @@ homebrew_cask_apps:
   - docker
   - google-chrome
   - google-cloud-sdk
+  - hot
   - hubstaff
   - iterm2
   - jetbrains-toolbox
