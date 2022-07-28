@@ -208,10 +208,10 @@
     type: bool
     value: false
 
-- name: Accept XCode license
-  ansible.builtin.command:
-    cmd: xcodebuild -license accept
-  become: true
+#- name: Accept XCode license
+#  ansible.builtin.command:
+#    cmd: xcodebuild -license accept
+#  become: true
 
 - name: Disable reopen on restart
   community.general.osx_defaults:
