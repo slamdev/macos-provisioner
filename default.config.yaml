@@ -92,8 +92,8 @@ mas_installed_apps:
     name: Tailscale (1.20.2)
   - id: 1352778147
     name: Bitwarden (1.30.0)
-  - id: 497799835
-    name: Xcode (13.2.1)
+#  - id: 497799835
+#    name: Xcode (13.2.1)
 
 mas_email: false
 mas_password: false
