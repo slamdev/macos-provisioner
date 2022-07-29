@@ -2,14 +2,12 @@ homebrew_installed_packages:
   - ansible
   - autoconf
   - awscli
-  - aws-iam-authenticator
   - bash-completion
   - bazelisk
   - buildifier
   - colordiff
   - coreutils
   - curl
-  - docker-credential-helper-ecr
   - esolitos/ipa/sshpass
   - gabrie30/utils/ghorg
   - git
@@ -37,7 +35,6 @@ homebrew_installed_packages:
   - packer
   - pkg-config
   - postgresql
-  - saml2aws
   - s3cmd
   - skaffold
   - stern
@@ -103,6 +100,7 @@ oh_my_zsh_plugins:
   - git
   - kubectl
   - docker
+  - zsh-history-substring-search
 
 krew_plugins:
   - ctx
