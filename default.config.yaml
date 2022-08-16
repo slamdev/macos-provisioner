@@ -104,6 +104,13 @@ oh_my_zsh_plugins:
 
 krew_plugins:
   - ctx
+  - get-all
+  - grep
+  - iexec
+  - ns
+  - pexec
+  - stern
+  - view-secret
 
 favourites:
   - name: Home
