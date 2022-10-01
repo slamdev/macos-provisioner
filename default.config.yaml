@@ -78,6 +78,8 @@ homebrew_cask_apps:
   - whatsapp
   - zoom
   - homebrew/cask-drivers/yubico-yubikey-manager
+  - citrix-workspace
+  - hot
 
 homebrew_taps:
   - homebrew/core
