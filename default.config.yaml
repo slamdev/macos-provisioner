@@ -1,6 +1,8 @@
 homebrew_installed_packages:
   - ansible
   - autoconf
+  - azure-cli
+  - Azure/kubelogin/kubelogin
   - awscli
   - bash-completion
   - bazelisk
@@ -79,6 +81,7 @@ homebrew_cask_apps:
   - zoom
   - homebrew/cask-drivers/yubico-yubikey-manager
   - citrix-workspace
+  - vault
 
 homebrew_taps:
   - homebrew/core
