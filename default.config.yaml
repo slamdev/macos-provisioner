@@ -30,7 +30,7 @@ homebrew_installed_packages:
   - less
   - mas
   - minio-mc
-  - node@16
+  - node@18
   - norwoodj/tap/helm-docs
   - openssl
   - operator-sdk
