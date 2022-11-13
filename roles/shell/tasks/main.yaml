@@ -18,6 +18,10 @@
     line: "{{ brew_bin }}/zsh"
   become: true
 
+- name: Proove we connected with the given user
+  shell: whoami
+  register: whoami_result
+
 - name: Set ZSH as the default shell
-  shell: "chsh -s {{ brew_bin }}/zsh {{ lookup('env', 'USER') }}"
+  shell: "chsh -s {{ brew_bin }}/zsh {{ whoami_result.stdout }}"
   become: true
