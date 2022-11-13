@@ -49,6 +49,7 @@ homebrew_installed_packages:
   - yq
   - zsh
   - zsh-history-substring-search
+  - vault
 
 homebrew_cask_apps:
   - adobe-acrobat-reader
@@ -81,7 +82,6 @@ homebrew_cask_apps:
   - zoom
   - homebrew/cask-drivers/yubico-yubikey-manager
   - citrix-workspace
-  - vault
 
 homebrew_taps:
   - homebrew/core
