@@ -274,4 +274,5 @@
 - name: Create empty Xcode.app file
   ansible.builtin.file:
     path: /Applications/Xcode.app
+    state: touch
     mode: '0644'
