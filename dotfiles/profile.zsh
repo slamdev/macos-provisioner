@@ -53,4 +53,6 @@ compdef -d mcd
 
 source ~/.iterm2_shell_integration.zsh
 
+source <(kubectl completion zsh)
+
 source "${brew_path}/share/zsh-history-substring-search/zsh-history-substring-search.zsh"

@@ -15,3 +15,14 @@ Run ansible playbook:
 ```shell
 ansible-playbook main.yaml
 ```
+
+Configure **Google Drive** app:
+
+1. Connect it to the target account in app settings
+2. Go to **Google Drive** location in **Finder** and enable offline access to "Other Computers/My IMac"
+
+Then run the second ansible playbook:
+
+```shell
+ansible-playbook sync-gdrive.yaml
+```

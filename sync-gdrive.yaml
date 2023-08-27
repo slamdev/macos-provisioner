@@ -1,0 +1,5 @@
+- hosts: all
+  vars_files:
+    - default.config.yaml
+  roles:
+    - role: gdrive-symlinks
