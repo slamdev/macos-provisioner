@@ -1,55 +1,64 @@
 homebrew_installed_packages:
   - ansible
   - autoconf
-  - azure-cli
-  - Azure/kubelogin/kubelogin
   - awscli
+  - azure-cli
   - bash-completion
   - bazelisk
   - buildifier
   - colordiff
   - coreutils
   - curl
+  - dyff
   - esolitos/ipa/sshpass
   - gabrie30/utils/ghorg
   - git
   - git-lfs
-  - gnu-getopt
-  - graphviz
+  - gradle
   - go
+  - golangci-lint
   - goreleaser
+  - graphviz
   - gzip
   - helm
+  - helm-docs
   - helmfile
   - jenv
   - jq
-  - kind
+  - less
+  - k6
+  - ko
   - krew
+  - kubelogin
   - kubernetes-cli
   - kustomize
-  - less
   - mas
+  - maven
   - minio-mc
+  - mysql-client
   - node@18
-  - norwoodj/tap/helm-docs
   - openssl
-  - operator-sdk
-  - packer
   - pkg-config
+  - pnpm
   - postgresql
+  - redis
   - s3cmd
   - skaffold
+  - sshpass
   - stern
   - telnet
   - terraform
   - terragrunt
   - tree
+  - vacuum
+  - vault
   - watch
   - wget
+  - xz
+  - yarn
   - yq
   - zsh
   - zsh-history-substring-search
-  - vault
 
 homebrew_cask_apps:
   - adobe-acrobat-reader
@@ -58,6 +67,7 @@ homebrew_cask_apps:
   - docker
   - google-chrome
   - google-cloud-sdk
+  - google-drive
   - hot
   - hubstaff
   - iterm2
@@ -79,9 +89,8 @@ homebrew_cask_apps:
   - temurin17
   - vlc
   - whatsapp
+  - yubico-yubikey-manager
   - zoom
-  - homebrew/cask-drivers/yubico-yubikey-manager
-  - citrix-workspace
 
 homebrew_taps:
   - homebrew/core
@@ -93,18 +102,12 @@ mas_installed_apps:
     name: Tailscale (1.20.2)
   - id: 1352778147
     name: Bitwarden (1.30.0)
-#  - id: 497799835
-#    name: Xcode (13.2.1)
 
 mas_email: false
 mas_password: false
 mas_signin_dialog: false
 
-oh_my_zsh_plugins:
-  - git
-  - kubectl
-  - docker
-  - zsh-history-substring-search
+oh_my_zsh_plugins: [ ]
 
 krew_plugins:
   - ctx

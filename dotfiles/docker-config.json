@@ -1,7 +1,4 @@
 {
-  "auths": {
-    "registry.adnz.co": {}
-  },
   "credsStore": "desktop",
   "experimental": "disabled"
 }
