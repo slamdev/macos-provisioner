@@ -37,7 +37,7 @@
       "Ansi 9 Color (Light)": {
         "Red Component": 0.79607843137254897,
         "Color Space": "sRGB",
-        "Blue Component": 0.086274509803921567,
+        "Blue Component": 0.086274509803921581,
         "Green Component": 0.29411764705882354
       },
       "Ansi 8 Color (Dark)": {
@@ -393,7 +393,7 @@
         "Green Component": 0.96470588235294119
       },
       "Ansi 0 Color (Dark)": {
-        "Red Component": 0.027450980392156862,
+        "Red Component": 0.027450980392156866,
         "Color Space": "sRGB",
         "Blue Component": 0.25882352941176473,
         "Green Component": 0.21176470588235294
@@ -470,7 +470,7 @@
       ],
       "Close Sessions On End": true,
       "Selection Color (Dark)": {
-        "Red Component": 0.027450980392156862,
+        "Red Component": 0.027450980392156866,
         "Color Space": "sRGB",
         "Blue Component": 0.25882352941176473,
         "Green Component": 0.21176470588235294
@@ -590,7 +590,7 @@
       "Ansi 9 Color (Dark)": {
         "Red Component": 0.79607843137254897,
         "Color Space": "sRGB",
-        "Blue Component": 0.086274509803921567,
+        "Blue Component": 0.086274509803921581,
         "Green Component": 0.29411764705882354
       },
       "Badge Color": {
@@ -629,7 +629,7 @@
         "Green Component": 0.54509803921568623
       },
       "Cursor Text Color (Dark)": {
-        "Red Component": 0.027450980392156862,
+        "Red Component": 0.027450980392156866,
         "Color Space": "sRGB",
         "Blue Component": 0.25882352941176473,
         "Green Component": 0.21176470588235294
@@ -706,6 +706,7 @@
       ],
       "Cursor Boost (Light)": 0,
       "Use Tab Color (Light)": false,
+      "Set Local Environment Vars": 2,
       "Ansi 6 Color (Light)": {
         "Red Component": 0.16470588235294117,
         "Color Space": "sRGB",
@@ -719,6 +720,7 @@
         "Blue Component": 0.18431372549019609,
         "Green Component": 0.19607843137254902
       },
+      "Custom Locale": "en_US.UTF-8",
       "Use Bold Font": true,
       "Ansi 2 Color": {
         "Red Component": 0.5215686559677124,
@@ -773,6 +775,7 @@
             "configuration": {
               "knobs": {
                 "maxwidth": 1.7976931348623157e+308,
+                "base: priority": 5,
                 "shared text color": {
                   "Red Component": 0.90000000000000002,
                   "Color Space": "sRGB",
@@ -780,9 +783,8 @@
                   "Alpha Component": 1,
                   "Green Component": 0.63
                 },
-                "minwidth": 0,
                 "base: compression resistance": 1,
-                "base: priority": 5
+                "minwidth": 0
               },
               "layout advanced configuration dictionary value": {
                 "font": ".AppleSystemUIFont 12",
@@ -797,16 +799,16 @@
               "knobs": {
                 "path": "path",
                 "maxwidth": 1.7976931348623157e+308,
-                "base: priority": 5,
-                "base: compression resistance": 1,
-                "minwidth": 0,
                 "shared text color": {
                   "Red Component": 0.90000000000000002,
                   "Color Space": "sRGB",
                   "Blue Component": 0.63,
                   "Alpha Component": 1,
                   "Green Component": 0.87570000000000003
-                }
+                },
+                "minwidth": 0,
+                "base: priority": 5,
+                "base: compression resistance": 1
               },
               "layout advanced configuration dictionary value": {
                 "font": ".AppleSystemUIFont 12",
@@ -843,16 +845,16 @@
               "knobs": {
                 "maxwidth": 1.7976931348623157e+308,
                 "iTermStatusBarGitComponentPollingIntervalKey": 2,
-                "base: priority": 5,
-                "base: compression resistance": 1,
-                "minwidth": 0,
                 "shared text color": {
                   "Red Component": 0.63,
                   "Color Space": "sRGB",
                   "Blue Component": 0.82710000000000006,
                   "Alpha Component": 1,
                   "Green Component": 0.90000000000000002
-                }
+                },
+                "minwidth": 0,
+                "base: priority": 5,
+                "base: compression resistance": 1
               },
               "layout advanced configuration dictionary value": {
                 "font": ".AppleSystemUIFont 12",
@@ -988,7 +990,7 @@
         "Green Component": 0.21176470816135406
       },
       "Ansi 0 Color (Light)": {
-        "Red Component": 0.027450980392156862,
+        "Red Component": 0.027450980392156866,
         "Color Space": "sRGB",
         "Blue Component": 0.25882352941176473,
         "Green Component": 0.21176470588235294

@@ -270,3 +270,8 @@
     key: LSQuarantine
     type: bool
     value: false
+
+- name: Create empty Xcode.app file
+  ansible.builtin.file:
+    path: /Applications/Xcode.app
+    mode: '0644'
