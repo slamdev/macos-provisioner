@@ -9,7 +9,7 @@ homebrew_installed_packages:
   - colordiff
   - coreutils
   - curl
-  - dyff
+  - homeport/tap/dyff
   - esolitos/ipa/sshpass
   - gabrie30/utils/ghorg
   - git
@@ -21,7 +21,7 @@ homebrew_installed_packages:
   - graphviz
   - gzip
   - helm
-  - helm-docs
+  - norwoodj/tap/helm-docs
   - helmfile
   - jenv
   - jq
@@ -29,7 +29,7 @@ homebrew_installed_packages:
   - k6
   - ko
   - krew
-  - kubelogin
+  - Azure/kubelogin/kubelogin
   - kubernetes-cli
   - kustomize
   - mas
@@ -50,7 +50,7 @@ homebrew_installed_packages:
   - terraform
   - terragrunt
   - tree
-  - vacuum
+  - daveshanley/vacuum/vacuum
   - vault
   - watch
   - wget
