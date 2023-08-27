@@ -145,8 +145,6 @@ dotfiles:
     dest: "{{ ansible_env.HOME }}/Library/Application Support/iTerm2/DynamicProfiles/iterm-profile.json"
   - src: ghorg-conf.yaml
     dest: "{{ ansible_env.HOME }}/.config/ghorg/conf.yaml"
-  - src: docker-config.json
-    dest: "{{ ansible_env.HOME }}/.docker/config.json"
 
 ghorg:
   - name: slamdev
