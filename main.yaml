@@ -20,6 +20,7 @@
         - username: "{{ ansible_user_id }}"
     - role: krew
     - role: mysides
+      when: ansible_architecture != 'arm64'
     - role: ssh-keys
     - role: dotfiles
     - role: jenv
