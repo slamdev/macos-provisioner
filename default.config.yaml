@@ -95,7 +95,6 @@ homebrew_cask_apps:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
-  - homebrew/cask-versions
 
 mas_installed_apps:
   - id: 1475387142
