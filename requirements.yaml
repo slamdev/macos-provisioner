@@ -8,4 +8,4 @@ collections:
   - name: geerlingguy.mac
     version: 2.1.1
   - name: community.general
-    version: 7.3.0
+    version: 7.5.7
