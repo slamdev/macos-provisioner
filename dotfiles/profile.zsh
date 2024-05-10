@@ -11,6 +11,7 @@ paths=(
   "${brew_path}/opt/node@18/bin"
   "${brew_path}/opt/curl/bin"
   "${brew_path}/opt/gnu-getopt/bin"
+  "${brew_path}/opt/mysql-client/bin"
   "$HOME/go/bin"
   "$HOME/.krew/bin"
   "$HOME/.jenv/bin"
@@ -54,5 +55,3 @@ compdef -d mcd
 source ~/.iterm2_shell_integration.zsh
 
 source <(kubectl completion zsh)
-
-source "${brew_path}/share/zsh-history-substring-search/zsh-history-substring-search.zsh"

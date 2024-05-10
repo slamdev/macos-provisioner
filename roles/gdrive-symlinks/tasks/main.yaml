@@ -2,10 +2,8 @@
   include_tasks:
     file: symlink.yaml
   loop:
-#    - src: "{{ ansible_env.HOME }}/Google Drive/Other computers/My iMac/Downloads"
-#      dest: "{{ ansible_env.HOME }}/Downloads"
-#    - src: "{{ ansible_env.HOME }}/Google Drive/Other computers/My iMac/Desktop"
-#      dest: "{{ ansible_env.HOME }}/Desktop"
+    - src: "{{ ansible_env.HOME }}/Google Drive/Other computers/My iMac/Downloads"
+      dest: "{{ ansible_env.HOME }}/Downloads"
     - src: "{{ ansible_env.HOME }}/Downloads/dotfiles/zprofile"
       dest: "{{ ansible_env.HOME }}/.zprofile"
     - src: "{{ ansible_env.HOME }}/Downloads/dotfiles/kube-config"

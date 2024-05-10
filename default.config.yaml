@@ -29,7 +29,7 @@ homebrew_installed_packages:
   - k6
   - ko
   - krew
-  - Azure/kubelogin/kubelogin
+  - azure/kubelogin/kubelogin
   - kubernetes-cli
   - kustomize
   - mas
@@ -40,18 +40,18 @@ homebrew_installed_packages:
   - openssl
   - pkg-config
   - pnpm
-  - postgresql
+  - postgresql@14
+  - poetry
   - redis
   - s3cmd
   - skaffold
-  - sshpass
   - stern
   - telnet
-  - terraform
+  - hashicorp/tap/terraform
   - terragrunt
   - tree
   - daveshanley/vacuum/vacuum
-  - vault
+  - hashicorp/tap/vault
   - watch
   - wget
   - xz
@@ -62,9 +62,10 @@ homebrew_installed_packages:
 
 homebrew_cask_apps:
   - adobe-acrobat-reader
-  - authy
+  - airflow
   - chrome-remote-desktop-host
   - docker
+  - dotnet-sdk
   - google-chrome
   - google-cloud-sdk
   - google-drive
@@ -93,8 +94,14 @@ homebrew_cask_apps:
   - zoom
 
 homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
+  - homebrew/cask-versions
+  - hashicorp/tap
+  - homeport/tap
+  - esolitos/ipa
+  - gabrie30/utils
+  - norwoodj/tap
+  - azure/kubelogin
+  - daveshanley/vacuum
 
 mas_installed_apps:
   - id: 1475387142
@@ -148,10 +155,10 @@ dotfiles:
 ghorg:
   - name: slamdev
     scm: github
-    clone-type: user
+    cloneType: user
     path: "{{ ansible_env.HOME }}"
-    outputDir: slamdev
-    base-url: https://api.github.com/
+    outputDir: workspace/slamdev
+    baseUrl: https://api.github.com/
 
 jenv_plugins:
   - export
