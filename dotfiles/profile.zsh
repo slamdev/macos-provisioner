@@ -8,7 +8,7 @@ else
 fi
 
 paths=(
-  "${brew_path}/opt/node@18/bin"
+  "${brew_path}/opt/node@22/bin"
   "${brew_path}/opt/curl/bin"
   "${brew_path}/opt/gnu-getopt/bin"
   "${brew_path}/opt/mysql-client/bin"
