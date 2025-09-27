@@ -36,7 +36,7 @@ homebrew_installed_packages:
   - maven
   - minio-mc
   - mysql-client
-  - node@18
+  - node@22
   - openssl
   - pkg-config
   - pnpm
@@ -80,7 +80,6 @@ homebrew_cask_apps:
   - qbittorrent
   - scroll-reverser
   - shifty
-  - skype
   - slack
   - stremio
   - sublime-text
@@ -90,7 +89,7 @@ homebrew_cask_apps:
   - temurin17
   - vlc
   - whatsapp
-  - yubico-yubikey-manager
+  - yubico-authenticator
   - zoom
 
 homebrew_taps:
