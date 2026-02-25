@@ -1,16 +1,21 @@
 homebrew_installed_packages:
   - ansible
+  - asciidoc
   - autoconf
   - awscli
   - azure-cli
+  - bash
   - bash-completion
   - bazelisk
   - buildifier
   - colordiff
   - coreutils
   - curl
+  - delve
+  - duti
   - homeport/tap/dyff
   - esolitos/ipa/sshpass
+  - firebase-cli
   - gabrie30/utils/ghorg
   - git
   - git-lfs
@@ -27,6 +32,7 @@ homebrew_installed_packages:
   - jq
   - less
   - k6
+  - kind
   - ko
   - krew
   - azure/kubelogin/kubelogin
@@ -36,14 +42,17 @@ homebrew_installed_packages:
   - maven
   - minio-mc
   - mysql-client
-  - node@22
+  - node@24
   - openssl
+  - oven-sh/bun/bun
+  - pandoc
   - pkg-config
   - pnpm
-  - postgresql@14
+  - postgresql@18
   - poetry
   - redis
   - s3cmd
+  - getsentry/tools/sentry-cli
   - skaffold
   - stern
   - telnet
@@ -61,11 +70,13 @@ homebrew_installed_packages:
   - zsh-history-substring-search
 
 homebrew_cask_apps:
+  #  - qbittorrent
+  #  - stremio
   - adobe-acrobat-reader
   - airflow
   - chrome-remote-desktop-host
-  - docker
-  - dotnet-sdk
+  - claude-code
+  - docker-desktop
   - google-chrome
   - google-cloud-sdk
   - google-drive
@@ -73,34 +84,37 @@ homebrew_cask_apps:
   - hubstaff
   - iterm2
   - jetbrains-toolbox
+  - macai
   - mucommander
   - mysides
-  - plex
+  - netdownloadhelpercoapp
   - postman
-  - qbittorrent
   - scroll-reverser
   - shifty
   - slack
-  - stremio
+  - steam
   - sublime-text
   - telegram
   - temurin
-  - temurin11
-  - temurin17
+  - temurin@11
+  - temurin@17
+  - temurin@21
   - vlc
   - whatsapp
   - yubico-authenticator
   - zoom
 
 homebrew_taps:
-  - homebrew/cask-versions
   - hashicorp/tap
   - homeport/tap
   - esolitos/ipa
   - gabrie30/utils
+  - getsentry/tools
   - norwoodj/tap
+  - oven-sh/bun
   - azure/kubelogin
   - daveshanley/vacuum
+  - siderolabs/tap
 
 mas_installed_apps:
   - id: 1475387142
@@ -150,6 +164,10 @@ dotfiles:
     dest: "{{ ansible_env.HOME }}/Library/Application Support/iTerm2/DynamicProfiles/iterm-profile.json"
   - src: ghorg-conf.yaml
     dest: "{{ ansible_env.HOME }}/.config/ghorg/conf.yaml"
+  - src: claude-settings.json
+    dest: "{{ ansible_env.HOME }}/.claude/settings.json"
+  - src: .npmrc
+    dest: "{{ ansible_env.HOME }}/.npmrc"
 
 ghorg:
   - name: slamdev

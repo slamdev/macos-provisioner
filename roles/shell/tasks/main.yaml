@@ -18,7 +18,7 @@
     line: "{{ brew_bin }}/zsh"
   become: true
 
-- name: Proove we connected with the given user
+- name: Prove we connected with the given user
   shell: whoami
   register: whoami_result
 

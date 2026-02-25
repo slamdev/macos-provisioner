@@ -185,7 +185,7 @@
     type: bool
     value: false
 
-- name: Show batery percent
+- name: Show battery percent
   community.general.osx_defaults:
     domain: com.apple.menuextra.battery
     key: ShowPercent
