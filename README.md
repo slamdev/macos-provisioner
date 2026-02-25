@@ -10,6 +10,14 @@ Create **hosts.yaml** file based on **hosts-example.yaml**
 
 Create **config.yaml** file and override configs from **default.config.yaml**
 
+In a new mac, before running the playbook:
+
+1. go to **System Settings** -> **General** -> **Sharing**
+    - edit "Local hostname"
+    - enable "Remote Login"
+2. open terminal and run: `python3` and click "Install"
+3. Open "App Store" (so we can rely on `mas` to install the apps)
+
 Run ansible playbook:
 
 ```shell
