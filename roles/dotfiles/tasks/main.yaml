@@ -50,7 +50,7 @@
   copy:
     dest: "{{ ansible_env.HOME }}/.kube/config"
     mode: 0600
-    content: "{{ kubeconfig.yaml }}"
+    content: "{{ kubeconfig_yaml }}"
 
 
 - name: Load s3cfg data
