@@ -122,10 +122,6 @@ mas_installed_apps:
   - id: 1352778147
     name: Bitwarden (1.30.0)
 
-mas_email: false
-mas_password: false
-mas_signin_dialog: false
-
 oh_my_zsh_plugins: [ ]
 
 krew_plugins:
