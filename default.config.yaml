@@ -1,4 +1,5 @@
 homebrew_installed_packages:
+  - act
   - ansible
   - asciidoc
   - autoconf
@@ -45,6 +46,7 @@ homebrew_installed_packages:
   - node@24
   - openssl
   - oven-sh/bun/bun
+  - hashicorp/tap/packer
   - pandoc
   - pkg-config
   - pnpm
@@ -84,6 +86,7 @@ homebrew_cask_apps:
   - hubstaff
   - iterm2
   - jetbrains-toolbox
+  - ledger-wallet
   - macai
   - mucommander
   - mysides
