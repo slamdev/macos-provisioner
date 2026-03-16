@@ -276,3 +276,8 @@
     path: /Applications/Xcode.app
     state: touch
     mode: '0644'
+
+- name: Enable DevToolsSecurity
+  ansible.builtin.command:
+    cmd: DevToolsSecurity -enable
+  become: true

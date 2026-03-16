@@ -36,7 +36,8 @@ export HOMEBREW_AUTO_UPDATE_SECS=604800
 # Disable homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1
 
-ulimit -S -n 2048
+ulimit -S -n 65536
+
 eval "$(jenv init -)"
 
 # load our own completion functions
