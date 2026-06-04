@@ -271,6 +271,15 @@
     type: bool
     value: false
 
+- name: Disable bottom-right hot corner (Quick Note)
+  community.general.osx_defaults:
+    domain: com.apple.dock
+    key: wvous-br-corner
+    type: int
+    value: 1
+  notify:
+    - Refresh Dock
+
 - name: Create empty Xcode.app file
   ansible.builtin.file:
     path: /Applications/Xcode.app

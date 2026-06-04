@@ -15,6 +15,7 @@
     - role: shell
     - role: mas
     - role: osx-defaults
+    - role: duti
     - role: gantsign.oh-my-zsh
       users:
         - username: "{{ ansible_user_id }}"

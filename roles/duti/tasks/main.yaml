@@ -1,0 +1,12 @@
+- name: Set default applications for file types
+  shell: |
+    current="$({{ brew_bin }}/duti -x {{ item.1 }} 2>/dev/null | tail -1)"
+    if [ "$current" != "{{ item.0.bundleId }}" ]; then
+      {{ brew_bin }}/duti -s {{ item.0.bundleId }} {{ item.1 }} all
+      echo "changed"
+    fi
+  loop: "{{ duti_associations | subelements('extensions') }}"
+  register: duti_result
+  changed_when: "'changed' in duti_result.stdout"
+  loop_control:
+    label: "{{ item.1 }} -> {{ item.0.bundleId }}"

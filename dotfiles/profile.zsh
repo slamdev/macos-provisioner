@@ -15,6 +15,8 @@ paths=(
   "$HOME/go/bin"
   "$HOME/.krew/bin"
   "$HOME/.jenv/bin"
+  "$HOME/.local/bin"
+  "$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
 )
 export PATH="$(IFS=: ; echo "${paths[*]}"):$PATH"
 

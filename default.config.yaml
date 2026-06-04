@@ -177,3 +177,19 @@ ghorg:
 
 jenv_plugins:
   - export
+
+duti_associations:
+  - bundleId: com.sublimetext.4
+    extensions:
+      - md
+      - markdown
+      - json
+      - yaml
+      - yml
+      - js
+      - ts
+      - go
+      - py
+      - xml
+      - sh
+      - csv
