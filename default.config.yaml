@@ -166,6 +166,8 @@ dotfiles:
     dest: "{{ ansible_env.HOME }}/.claude/settings.json"
   - src: .npmrc
     dest: "{{ ansible_env.HOME }}/.npmrc"
+  - src: sublime-preferences.sublime-settings
+    dest: "{{ ansible_env.HOME }}/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings"
 
 ghorg:
   - name: slamdev
