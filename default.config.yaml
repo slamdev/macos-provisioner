@@ -18,8 +18,11 @@ homebrew_installed_packages:
   - esolitos/ipa/sshpass
   - firebase-cli
   - gabrie30/utils/ghorg
+  - gemini-cli
+  - gh
   - git
   - git-lfs
+  - glab
   - gradle
   - go
   - golangci-lint
@@ -42,13 +45,15 @@ homebrew_installed_packages:
   - mas
   - maven
   - minio-mc
+  - mtr
   - mysql-client
   - node@24
-  - openssl
+  - openssl@3
   - oven-sh/bun/bun
   - hashicorp/tap/packer
   - pandoc
-  - pkg-config
+  - pipx
+  - pkgconf
   - pnpm
   - postgresql@18
   - poetry
@@ -77,10 +82,11 @@ homebrew_cask_apps:
   - adobe-acrobat-reader
   - airflow
   - chrome-remote-desktop-host
-  - claude-code
+  - claude
+  - claude-code@latest
   - docker-desktop
+  - gcloud-cli
   - google-chrome
-  - google-cloud-sdk
   - google-drive
   - hot
   - hubstaff
@@ -89,7 +95,6 @@ homebrew_cask_apps:
   - ledger-wallet
   - macai
   - mucommander
-  - mysides
   - netdownloadhelpercoapp
   - postman
   - scroll-reverser
@@ -121,9 +126,9 @@ homebrew_taps:
 
 mas_installed_apps:
   - id: 1475387142
-    name: Tailscale (1.20.2)
+    name: Tailscale (1.98.5)
   - id: 1352778147
-    name: Bitwarden (1.30.0)
+    name: Bitwarden (2026.4.0)
 
 oh_my_zsh_plugins: [ ]
 
@@ -136,12 +141,6 @@ krew_plugins:
   - pexec
   - stern
   - view-secret
-
-favourites:
-  - name: Home
-    path: ""
-  - name: Workspace
-    path: workspace
 
 ssh_private_key: false
 ssh_public_key: false
